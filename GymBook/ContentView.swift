@@ -9,14 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Image("loginBackground")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+                .frame(width: 500, height: 1000)
+                .padding(.leading, -8)
+                .onTapGesture {
+                    self.hideKeyboard()
+                }
+            
+            LoginView()
         }
-        .padding()
     }
+    
+    private func hideKeyboard() {
+            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        }
 }
 
 #Preview {

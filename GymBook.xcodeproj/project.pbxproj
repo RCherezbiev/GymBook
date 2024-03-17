@@ -11,6 +11,8 @@
 		C4310EA92BA784BE00A7EF30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4310EA82BA784BE00A7EF30 /* ContentView.swift */; };
 		C4310EAB2BA784BF00A7EF30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4310EAA2BA784BF00A7EF30 /* Assets.xcassets */; };
 		C4310EAE2BA784BF00A7EF30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4310EAD2BA784BF00A7EF30 /* Preview Assets.xcassets */; };
+		C4310EB52BA784FE00A7EF30 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4310EB42BA784FE00A7EF30 /* LoginView.swift */; };
+		C4310EB72BA7A47A00A7EF30 /* GymNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4310EB62BA7A47A00A7EF30 /* GymNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C4310EA82BA784BE00A7EF30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4310EAA2BA784BF00A7EF30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4310EAD2BA784BF00A7EF30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4310EB42BA784FE00A7EF30 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C4310EB62BA7A47A00A7EF30 /* GymNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,12 @@
 		C4310EA52BA784BE00A7EF30 /* GymBook */ = {
 			isa = PBXGroup;
 			children = (
+				C4310EB42BA784FE00A7EF30 /* LoginView.swift */,
 				C4310EA62BA784BE00A7EF30 /* GymBookApp.swift */,
 				C4310EA82BA784BE00A7EF30 /* ContentView.swift */,
 				C4310EAA2BA784BF00A7EF30 /* Assets.xcassets */,
 				C4310EAC2BA784BF00A7EF30 /* Preview Content */,
+				C4310EB62BA7A47A00A7EF30 /* GymNoteView.swift */,
 			);
 			path = GymBook;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4310EB52BA784FE00A7EF30 /* LoginView.swift in Sources */,
 				C4310EA92BA784BE00A7EF30 /* ContentView.swift in Sources */,
+				C4310EB72BA7A47A00A7EF30 /* GymNoteView.swift in Sources */,
 				C4310EA72BA784BE00A7EF30 /* GymBookApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
