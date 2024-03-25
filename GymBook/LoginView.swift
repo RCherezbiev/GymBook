@@ -16,9 +16,17 @@ struct LoginView: View {
     
     var body: some View {
         VStack {
+            Image(systemName: "gym.bag.fill")
+                .resizable()
+                .frame(width: 150, height: 100)
+                .foregroundColor(.black)
+                .opacity(0.6)
+                .shadow(color: .white, radius: 5)
+            
             Text("Gym Book")
                 .font(.largeTitle)
                 .foregroundStyle(.white)
+            
             Text("Fix & Progrss")
                 .font(.headline)
                 .foregroundStyle(.white)
@@ -28,18 +36,13 @@ struct LoginView: View {
                     .padding(.leading, 10)
                     .frame(width: 230, height: 30)
                     .background(Color.white.opacity(0.8))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 3)
-                            .stroke(Color.white, lineWidth: 1.0)
-                    )
+                    .cornerRadius(5)
+                
                 TextField("Пароль", text: $password)
                     .padding(.leading, 10)
                     .frame(width: 230, height: 30)
                     .background(Color.white.opacity(0.8))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 3)
-                            .stroke(Color.white, lineWidth: 1.0)
-                    )
+                    .cornerRadius(5)
             }
             .padding()
             
@@ -51,15 +54,12 @@ struct LoginView: View {
             .fullScreenCover(isPresented: $isPresented) {
                 GymNoteView()
             }
-            
-            
-            .frame(width: 100, height: 25)
+            .buttonStyle(DefaultButtonStyle())
+            .frame(width: 150, height: 30)
             .background(Color.blue)
             .tint(.white)
-            .overlay(
-                RoundedRectangle(cornerRadius: 5)
-                    .stroke(Color.white)
-            )
+            .cornerRadius(5)
+            .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.white))
             
         }
     }

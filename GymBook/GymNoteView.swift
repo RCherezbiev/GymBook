@@ -9,7 +9,13 @@ import SwiftUI
 
 struct GymNoteView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List {
+                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            }
+        }
+        .listStyle(.plain)
+        .navigationBarTitle("Hello")
     }
 }
 

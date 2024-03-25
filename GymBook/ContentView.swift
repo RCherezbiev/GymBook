@@ -10,25 +10,49 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Image("loginBackground")
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-                .frame(width: 500, height: 1000)
-                .padding(.leading, -8)
-                .onTapGesture {
-                    self.hideKeyboard()
-                }
+            LinearGradient(
+                colors: [.black, .cyan],
+                startPoint: .bottomLeading,
+                endPoint: .topTrailing
+            )
             
-            LoginView()
+            .onTapGesture {
+                self.hideKeyboard()
+            }
+            .ignoresSafeArea()
+            
+            VStack {
+                LoginView()
+            }
+            .padding(.top, -100)
         }
     }
     
     private func hideKeyboard() {
-            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        UIApplication.shared.sendAction(
+            #selector(UIResponder.resignFirstResponder),
+            to: nil,
+            from: nil,
+            for: nil
+        )
         }
 }
 
 #Preview {
     ContentView()
 }
+
+
+//        ZStack {
+//            Image("loginBackground")
+//                .resizable()
+//                .scaledToFill()
+//                .ignoresSafeArea()
+//                .frame(width: 500, height: 1000)
+//                .padding(.leading, -8)
+//
+//
+//            LoginView()
+//        }
+
+
